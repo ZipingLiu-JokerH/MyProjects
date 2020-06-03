@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simple Travel Survey</title>
+        <link rel="stylesheet" href="css/index.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <main>
+            <h1>This is a simple travel survey</h1>
+            <form onsubmit="submitForm()">
+                <div class="question">
+                    <label for="age">What's your age</label>
+                    <input type="number" min="0" name="age" id="age" />
+                </div>
+
+                <div class="question">
+                    <span>What is your relationship:</span><br />
+                    <div class="radioQuestions">
+                        <input
+                            type="radio"
+                            name="relationship"
+                            value="officially single"
+                        />
+                        officially single
+                        <input
+                            type="radio"
+                            name="relationship"
+                            value="have boyfriend/girlfriend"
+                        />
+                        have boyfriend/girlfriend
+                        <input
+                            type="radio"
+                            name="relationship"
+                            value="marriaged"
+                        />
+                        marriage
+                        <input
+                            type="radio"
+                            name="relationship"
+                            value="married with children"
+                        />
+                        married with children
+                        <input
+                            type="radio"
+                            name="relationship"
+                            value="single with children"
+                        />
+                        single with children
+                    </div>
+                </div>
+
+                <div class="question">
+                    <span>What do you currently do:</span><br />
+                    <div class="radioQuestions">
+                        <input
+                            type="radio"
+                            name="currentActivity"
+                            value="student"
+                        />
+                        student
+                        <input
+                            type="radio"
+                            name="currentActivity"
+                            value="work"
+                        />
+                        work
+                        <input
+                            type="radio"
+                            name="currentActivity"
+                            value="unemployed"
+                        />
+                        unemployed
+                        <input
+                            type="radio"
+                            name="currentActivity"
+                            value="other"
+                        />
+                        other
+                    </div>
+                </div>
+
+                <div class="question">
+                    <span>How oftern do you travel per year:</span><br />
+                    <div class="radioQuestions">
+                        <input
+                            type="radio"
+                            name="travelFrequency"
+                            value="no travel"
+                        />
+                        no travel
+                        <input
+                            type="radio"
+                            name="travelFrequency"
+                            value="once or twice"
+                        />
+                        once or twice
+                        <input
+                            type="radio"
+                            name="travelFrequency"
+                            value="3 or 4 times"
+                        />
+                        3 or 4 times
+                        <input
+                            type="radio"
+                            name="travelFrequency"
+                            value="5 times or more"
+                        />
+                        5 times or more
+                    </div>
+                </div>
+
+                <div class="question">
+                    <span>Why do you travel:</span><br />
+                    <div class="radioQuestions">
+                        <input
+                            type="radio"
+                            name="travelReason"
+                            value="leisure"
+                        />leisure
+                        <input
+                            type="radio"
+                            name="travelReason"
+                            value="adventure"
+                        />adventure
+                        <input
+                            type="radio"
+                            name="travelReason"
+                            value="business"
+                        />business
+                        <input
+                            type="radio"
+                            name="travelReason"
+                            value="study"
+                        />study
+                        <input
+                            type="radio"
+                            name="travelReason"
+                            value="shopping"
+                        />shopping
+                        <input
+                            type="radio"
+                            name="travelReason"
+                            value="visiting"
+                        />visiting
+                        <input
+                            type="radio"
+                            name="travelReason"
+                            value="other"
+                        />other
+                    </div>
+                </div>
+
+                <div class="question">
+                    <span>Do you plan your trip or follow others plan:</span
+                    ><br />
+                    <div class="radioQuestions">
+                        <input
+                            type="radio"
+                            name="planStrategy"
+                            value="I plan the trip"
+                        />
+                        I plan the trip
+                        <input
+                            type="radio"
+                            name="planStrategy"
+                            value="I follow others planp"
+                        />
+                        I follow others plan
+                        <input
+                            type="radio"
+                            name="planStrategy"
+                            value="I plan with others"
+                        />
+                        I plan with others
+                        <input
+                            type="radio"
+                            name="planStrategy"
+                            value="I do not need a plan during trips"
+                        />
+                        I do not need a plan during trips
+                    </div>
+                </div>
+
+                <div class="question">
+                    <span>
+                        How likely are you going to post your travel experience
+                        and photos on social media: </span
+                    ><br />
+                    <div class="radioQuestions">
+                        <input
+                            type="radio"
+                            name="postStrategy"
+                            value="impossible"
+                        />
+                        impossible
+                        <input
+                            type="radio"
+                            name="postStrategy"
+                            value="not very likely"
+                        />
+                        not very likely
+                        <input
+                            type="radio"
+                            name="postStrategy"
+                            value="possible"
+                        />
+                        possible
+                        <input
+                            type="radio"
+                            name="postStrategy"
+                            value="likely"
+                        />
+                        likely
+                        <input
+                            type="radio"
+                            name="postStrategy"
+                            value="very likely"
+                        />
+                        very likely
+                    </div>
+                </div>
+
+                <div class="question">
+                    <span>
+                        What features you wish were there when you are using
+                        travel apps: </span
+                    ><br />
+                    <div class="radioQuestions">
+                        <input
+                            type="radio"
+                            name="desireAppFeature"
+                            value="local weather report"
+                        />local weather report
+                        <input
+                            type="radio"
+                            name="desireAppFeature"
+                            value="local tips"
+                        />local tips
+                        <input
+                            type="radio"
+                            name="desireAppFeature"
+                            value="/“i wish i knew/” section"
+                        />“i wish i knew” section
+                        <input
+                            type="radio"
+                            name="desireAppFeature"
+                            value="bookkeeping"
+                        />bookkeeping
+                        <input
+                            type="radio"
+                            name="desireAppFeature"
+                            value="other"
+                        />other
+                    </div>
+                </div>
+
+                <div class="openQuestion">
+                    <label for="apps">What apps do you use for traveling</label>
+                    <br />
+                    <textarea
+                        name="apps"
+                        id="apps"
+                        cols="50"
+                        rows="5"
+                    ></textarea>
+                </div>
+
+                <div class="openQuestion">
+                    <label for="painPoints"
+                        >Are there any pain points you have encountered when
+                        using the above apps</label
+                    ><br />
+                    <textarea
+                        name="painPoints"
+                        id="painPoints"
+                        cols="50"
+                        rows="5"
+                    ></textarea>
+                </div>
+                <input type="submit" />
+            </form>
+        </main>
+    </body>
+
+    <script>
+        function submitForm() {
+            event.preventDefault();
+            // create XHR object
+            var xhr = new XMLHttpRequest();
+            // OPEN - type of request, url/file name, async or not
+            xhr.open(
+                "POST",
+                "https://simple-survey-9b28c.firebaseio.com/res.json",
+                true
+            );
+            const selectForm = document.forms[0];
+            const data = {
+                age: selectForm.elements["age"].value,
+                relationship: selectForm.elements["relationship"].value,
+                currentActivity: selectForm.elements["currentActivity"].value,
+                travelFrequency: selectForm.elements["travelFrequency"].value,
+                travelReason: selectForm.elements["travelReason"].value,
+                planStrategy: selectForm.elements["planStrategy"].value,
+                postStrategy: selectForm.elements["postStrategy"].value,
+                desireAppFeature: selectForm.elements["desireAppFeature"].value,
+                apps: selectForm.elements["apps"].value,
+                painPoints: selectForm.elements["painPoints"].value,
+            };
+
+            xhr.setRequestHeader("Content-Type", "application/json");
+            // sends request
+            xhr.send(JSON.stringify(data));
+
+            alert("Data send");
+        }
+    </script>
+</html>
