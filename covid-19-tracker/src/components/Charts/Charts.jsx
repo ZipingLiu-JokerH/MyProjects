@@ -72,7 +72,9 @@ export default function Charts({ countryData, selectedCountry }) {
 
     return (
         <div className={styles.container}>
-            {selectedCountry ? barChart : lineChart}
+            {selectedCountry === "" || selectedCountry === "global"
+                ? lineChart
+                : barChart}
         </div>
     );
 }
