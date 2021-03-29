@@ -71,6 +71,8 @@ class Calculator {
   }
 
   compute() {
+    if (this.currentDisplay === "." || this.currentDisplay === "-.")
+      this.currentDisplay = "0";
     let evalString = this.previousDisplay + this.currentDisplay;
     const firstformatedString = evalString.replace(/÷/g, "/");
     const secondformatedString = firstformatedString.replace(/×/g, "*");
